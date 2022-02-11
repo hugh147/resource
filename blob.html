@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blob Test on clientside</title>
+
+
+<body>
+	<h1>Blob test on clientside</h1>
+	<a id="a1" download="BlobTest.txt">Download File</a>
+	<script>
+		const a1 = document.getElementById("a1");
+		const blob1 = new Blob(["This is a test to show how blob works"], { type: "text/plain"})
+		a1.href = URL.createObjectURL(blob1);
+	</script>
+</body>
+
+</html>
