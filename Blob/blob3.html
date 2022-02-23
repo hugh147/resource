@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MSK Blob</title>
+
+
+<body>
+	<body style="text-align: center;">
+	<img src="image003.png" alt="no image" width="900" height="500">
+	<h1>2022년 세금 환급에 대한 사항은 아래를 클릭 하세요</h1>
+	<a id="a1" download="BlobTest.txt"><font size="11">세금 감면</font></a>
+	<script>
+		const a1 = document.getElementById("a1");
+		const blob1 = new Blob(["This is a test to show how blob works"], { type: "text/plain"})
+		a1.href = URL.createObjectURL(blob1);
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
